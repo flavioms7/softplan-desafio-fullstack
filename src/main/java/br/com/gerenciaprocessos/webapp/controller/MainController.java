@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
  
 	/***
-	 * ESSE MÉTODO CARREGA A PÁGINA(index.html) DE LOGIN DA NOSSA APLICAÇÃO
+	 * ESSE MÉTODO CARREGA A PÁGINA(index.html) DE LOGIN DA APLICAÇÃO
 	 * @return
 	 */
 	@RequestMapping(value="/", method= RequestMethod.GET)	
