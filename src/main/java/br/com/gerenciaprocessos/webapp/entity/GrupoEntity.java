@@ -29,7 +29,7 @@ public class GrupoEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
  
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id_grupo")
+	@GeneratedValue(strategy=GenerationType.AUTO, generator="id_grupo")
 	@SequenceGenerator(name="id_grupo", sequenceName="id_grupo")  	
 	@Column(name="id_grupo")
 	private Long codigo;
@@ -51,7 +51,7 @@ public class GrupoEntity implements Serializable {
  
 	@ManyToMany
 	@JoinTable(
-	name="permissao_gripo",
+	name="permissao_grupo",
 	joinColumns=@JoinColumn(name="id_grupo", referencedColumnName="id_grupo"),
 	inverseJoinColumns=@JoinColumn(name="id_permissao", referencedColumnName="id_permissao")
 	)

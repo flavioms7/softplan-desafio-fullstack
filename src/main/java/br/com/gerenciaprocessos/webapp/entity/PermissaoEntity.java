@@ -28,7 +28,7 @@ public class PermissaoEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
  
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id_permissao")
+	@GeneratedValue(strategy=GenerationType.AUTO, generator="id_permissao")
 	@SequenceGenerator(name="id_permissao", sequenceName="id_permissao")  	
 	@Column(name="id_permissao")	
 	private Long codigo;

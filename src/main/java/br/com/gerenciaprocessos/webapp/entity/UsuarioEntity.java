@@ -22,7 +22,6 @@ import javax.persistence.Table;
  * - Classe Responsável por povoar a tabela de Usuário
  *
  */
-
 @Table(name="usuario")
 @javax.persistence.Entity
 public class UsuarioEntity implements Serializable {
@@ -30,7 +29,7 @@ public class UsuarioEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy= GenerationType.SEQUENCE, generator="id_usuario")
+	@GeneratedValue(strategy= GenerationType.AUTO, generator="id_usuario")
 	@SequenceGenerator(name="id_usuario", sequenceName="id_usuario")  	
 	@Column(name="id_usuario")
 	private Long codigo;
